@@ -1,0 +1,31 @@
+body{
+    background-color: #212121;
+    color: white;
+}
+
+header{
+    text-align: center;
+    font-family: Verdana;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.box{
+    border: grey 1px solid;
+    text-align: center;
+    margin: 10px;
+}
+
+
+.box a{
+    text-decoration: none;
+    color: white;
+}
+
+.box p a:hover{
+    text-decoration: underline yellow;
+}
+
