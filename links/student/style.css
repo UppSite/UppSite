@@ -1,9 +1,51 @@
 body{
-    background-color: #212121;
+    background-color: black;
     color: white;
 }
 
 header {
     text-align: center;
     font-family: Verdana;
+    color: #FFFF00;
+}
+
+.lijn{
+    border-bottom: 3px #FFFF00 solid;
+    width: 100%;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.niveaus li{
+    margin-bottom: 10px;
+    color:khaki;
+}
+
+.school li{
+    color: white;
+}
+
+
+.basis{
+    border-bottom: #FFFF00 2px solid;
+    padding-bottom: 15px;
+    color: #FFFF00;
+
+}
+
+.middel{
+    border-bottom: #FFFF00 2px solid;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: #00FFFF;
+}
+
+.hoger{
+    padding-top: 15px;
+
 }

@@ -1,22 +1,39 @@
 body{
-    background-color: #212121;
+    background-color: black;
     color: white;
 }
 
 header{
     text-align: center;
     font-family: Verdana;
+    color: white;
 }
-
+/*header span{
+    color: ;
+}
+*/
 .wrapper{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .box{
-    border: grey 1px solid;
+    border: white 3px solid;
+    border-radius: 20px;
     text-align: center;
-    margin: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.boxHead{
+    border-right: white 3px solid;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 50%;
 }
 
 
@@ -25,7 +42,60 @@ header{
     color: white;
 }
 
-.box p a:hover{
-    text-decoration: underline yellow;
+
+
+/*.box p a:hover{
+    color: red;
+
+}*/
+
+.basic{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
 }
 
+.lijn{
+    border-bottom: 3px red solid;
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+.yellow:hover{
+    color: #FFFF00;
+    transition: 0.4s;
+}
+
+
+.magenta:hover{
+    color: #FF00FF;
+    transition: 0.4s;
+}
+
+
+.cyan:hover{
+    color: #00FFFF;
+    transition: 0.4s;
+}
+
+
+.box a{
+    width: 100%;
+}
+
+.boxcy:hover{
+    border: #00FFFF 3px solid;
+}
+
+.boxma:hover{
+    border: #FF00FF 3px solid;
+}
+
+.boxye:hover{
+    border: #FFFF00 3px solid;
+}
