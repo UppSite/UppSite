@@ -1,9 +1,48 @@
 body{
-    background-color: #212121;
+    background-color: black;
     color: white;
 }
 
 header {
     text-align: center;
     font-family: Verdana;
+    color:#00FFFF ;
+}
+
+.lijn{
+    border-bottom: 3px #00FFFF solid;
+    width: 100%;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.volley{
+    border-bottom: #00FFFF 2px solid;
+    padding-bottom: 15px;
+    color: #00FFFF;
+}
+
+.Schaken{
+    border-bottom: #00FFFF 2px solid;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: #00FFFF;
+}
+
+.Fitness{
+    padding-top: 15px;
+}
+
+.niveaus li{
+    margin-bottom: 10px;
+    color: #00B7EB /*donderder cyan nog*/;
+}
+
+.details li{
+    color: white;
 }
