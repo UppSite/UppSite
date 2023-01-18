@@ -2,7 +2,6 @@ body{
     background-color: black;
     color: white;
 }
-
 header{
     text-align: center;
     font-family: Verdana;
@@ -18,7 +17,6 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-
 .box{
     border: white 3px solid;
     border-radius: 20px;
@@ -27,7 +25,7 @@ header{
     margin-top: 10px;
     width: 80%;
 }
-
+/*a moet de nieuwe box worden*/
 .boxHead{
     border-right: white 3px solid;
     text-align: center;
@@ -35,67 +33,42 @@ header{
     margin-top: 10px;
     width: 50%;
 }
-
-
-.box a{
+a{
     text-decoration: none;
     color: white;
 }
-
-
-
-/*.box p a:hover{
-    color: red;
-
-}*/
-
 .basic{
     display: flex;
     justify-content: space-around;
     width: 100%;
 
 }
-
 .lijn{
     border-bottom: 3px red solid;
     width: 100%;
 }
-
 footer{
     display: flex;
     justify-content: center;
 }
 
-.yellow:hover{
-    color: #FFFF00;
-    transition: 0.4s;
-}
-
-
-.magenta:hover{
-    color: #FF00FF;
-    transition: 0.4s;
-}
-
-
-.cyan:hover{
+.boxcy:hover{
+    border: #00FFFF 3px solid;
     color: #00FFFF;
     transition: 0.4s;
 }
-
-
-.box a{
-    width: 100%;
-}
-
-.boxcy:hover{
-    border: #00FFFF 3px solid;
-}
-
 .boxma:hover{
     border: #FF00FF 3px solid;
+    color: #FF00FF;
+    transition: 0.4s;
 }
-
 .boxye:hover{
     border: #FFFF00 3px solid;
+    color: #FFFF00;
+    transition: 0.4s;
+}
+.boxgr:hover{
+    border: #00FF00 3px solid;
+    color: #00FF00;
+    transition: 0.4s;
 }

@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+    color: white;
+    background-image: url("");/*hier foto luka met zwarte achtergrond*/
+}
+
+header {
+    text-align: center;
+    font-family: Verdana;
+    color: #00FF00;
+}
+
+.lijn{
+    border-bottom: 3px #00FF00 solid;
+    width: 100%;
+}
