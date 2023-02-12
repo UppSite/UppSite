@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UppSite</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/bootstrap-grid.css">
+</head>
+<body>
+
+<header>
+    <h1>Curri<span>culum</span> Vi<span>tae</span></h1>
+    <h2>Welkom <span id="result"></span></h2>
+    <script>
+        document.getElementById("result").innerHTML=localStorage.getItem('textvalue');
+    </script>
+</header>
+
+<div class="container-fluid">
+<div class="wrapper">
+
+    <div class="lijn">
+
+    </div>
+<div class="basic">
+    <div class="boxHead">
+        <p>Luka Devlieger</p>
+    </div>
+
+
+    <div class="boxHead">
+        <p>3 Augustus 2004</p>
+    </div>
+
+
+    <div style="border-right: none" class="boxHead">
+        <p>Passendale</p>
+    </div>
+</div>
+
+    <a class="box boxye" href="../student/index.html">
+        <div>
+            <p>Student</p>
+        </div>
+    </a>
+
+    <a class="box boxcy" href="../hobbys/index.html">
+        <div>
+            <p>Hobby's</p>
+        </div>
+    </a>
+
+    <a class="box boxgr" href="../aboutME/index.html">
+        <div>
+            <p>About me</p>
+        </div>
+    </a>
+
+    <a class="box boxma" href="mailto:DevliegerLuka@gmail.com">
+        <div>
+            <p>Contact</p>
+        </div>
+    </a>
+
+    <div class="lijn">
+
+    </div>
+</div>
+</div>
+
+<footer>
+    <p>Last updated: januari 2023</p>
+</footer>
+</body>
+</html>
