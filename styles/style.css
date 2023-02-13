@@ -1,13 +1,21 @@
-.login{
-    border: yellow 5px solid;
-    background-color: violet;
+main{
+    background-color: grey;
     padding: 15px;
     border-radius: 20px;
-    grid-area: 4/2/5/3;
+    height: 50px;
+    display: flex;
+    align-items: center;
 }
+
 body{
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: black;
     color: white;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
 }
