@@ -41,6 +41,7 @@ main{
 }
 main input{
     height: 8vh;
+    font-size: 3vh;
 }
 main input::placeholder{
     font-size: 3vh;
