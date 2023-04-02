@@ -15,6 +15,7 @@ nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 0;
 }
 nav ul li{
     list-style-type: none;
