@@ -21,17 +21,16 @@ nav ul li{
     line-height: 2.5;
 }
 nav ul li span{
-
+    font-size: 4vh;
 }
 .fill1{
     width: 100%;
-    height: 10vh;
+    height: 7vh;
 }
 .container-main{
     display: flex;
     justify-content: center;
-    height: 50vh;
-    border: red solid 1px;
+    height: 83vh;
 }
 main{
     width: 75%;
@@ -41,4 +40,7 @@ main{
 }
 main input{
     height: 8vh;
+}
+main input::placeholder{
+    font-size: 3vh;
 }
