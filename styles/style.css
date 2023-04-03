@@ -3,6 +3,8 @@ body{
     width: 100%;
     margin: 0;
     padding: 0;
+    background-image: linear-gradient(grey,rgb(208,148,77,1));
+    overflow: hidden;
 }
 
 nav{
@@ -28,12 +30,19 @@ nav ul li span{
 }
 nav ul li span a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 nav ul li span a:hover{
-    border-bottom: darkred solid 0.5vh;
+    border-bottom: rgb(208,148,77,1) solid 0.5vh;
+}
+nav ul li span a:visited{
+    color: white;
 }
 .fill1{
     width: 100%;
     height: 7vh;
+}
+main{
+    width: 100%;
+    height: 90vh;
 }
