@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="text/javascript" charset="utf-8"
+            src="scripts/code.js"></script>
+    <title>zoek</title>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><span><a href="../../index.html">Start</a></span></li>
+        <li><span><a href="../zoek/index.html">Zoek</a></span></li>
+        <li><span><a href="../toevoegen/index.html">Toevoegen</a></span></li>
+        <li><span><a href="../verwijderen/index.html">Verwijderen</a></span></li>
+    </ul>
+</nav>
+
+<div class="fill1"></div>
+
+<main>
+    <div class="zoek">
+        zoek op:
+        <select name="opties">
+            <option id="lisArtiest" value="Naam Artiest">Naam Artiest</option>
+            <option id="lisAlbum" value="Naam Album">Naam Album</option>
+            <option id="lisJaar" value="Jaartal">Jaartal</option>
+        </select>
+
+    </div>
+    <div id="input">
+        <input type="text" id="inputArtiest" required autoFocus placeholder="Naam Artiest">
+        <input type="text" id="inputAlbum" required autoFocus placeholder="Naam Album">
+        <input type="number" id="inputJaartal" required autoFocus placeholder="Jaartal">
+        <input type="button" value="zoek" id="btnSend">
+    </div>
+    <div class="resultaat">
+
+    </div>
+</main>
+
+</body>
+</html>
