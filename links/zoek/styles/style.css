@@ -59,9 +59,11 @@ main{
     border-color: white;
     color: white;
     margin-left: 0.5vh;
+    font-size: 3vh;
 }
 .zoek select option{
     color: black;
+    font-size: 3vh;
 }
 #input{
     width: 100%;
@@ -76,6 +78,7 @@ main{
     color: white;
     border-color: white;
     margin: 0.5vh;
+    font-size: 3vh;
 }
 #input input::placeholder{
     color: white;
