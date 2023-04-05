@@ -43,7 +43,7 @@ main{
     color: white;
 }
 .zoek{
-    width: 100%;
+    width: 75%;
     height: 7vh;
     display: flex;
     justify-content: center;
@@ -66,12 +66,11 @@ main{
     font-size: 3vh;
 }
 #input{
-    width: 100%;
+    width: 75%;
     height: 7vh;
     display: flex;
     justify-content: center;
     padding-bottom: 2.5vh;
-    border-bottom: solid black 0.5vh;
 }
 #input input{
     background-color: transparent;
