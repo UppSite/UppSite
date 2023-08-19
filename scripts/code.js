@@ -28,10 +28,10 @@ const saveSwatch = () => {
 
 const setColorPickerFromSwatch = (event) => {
     if (event.target.className=="swatch") {
-        let swatch = event.target;
+        let rgb = event.target;
         document.getElementById("sldRed").value = rgb.red;
-        document.getElementById("sldGreen").value = rgb.green
-        document.getElementById("sldBlue").value = rgb.blue
+        document.getElementById("sldGreen").value = rgb.green;
+        document.getElementById("sldBlue").value = rgb.blue;
 
 
         // helaas triggeren de .value wijzigingen niet automatisch
