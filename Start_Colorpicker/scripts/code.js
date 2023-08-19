@@ -1,5 +1,5 @@
 const initialize = () => {
-    document.getElementById("btnSave").addEventListener("click", saveColors);
+    document.getElementById("btnSave").addEventListener("click", saveSwatch);
     let sliders = document.getElementsByClassName("slider");
     for (let i = 0; i < sliders.length; i++) {
         // we moeten zowel op het input als het change event reageren,
@@ -9,20 +9,46 @@ const initialize = () => {
     }
 
     restoreSliderValues();
+    restoreSwatches();
 
     update();
 };
 
-const saveColors = () => {
+const saveSwatch = () => {
     let red = document.getElementById("sldRed").value;
     let green = document.getElementById("sldGreen").value;
     let blue = document.getElementById("sldBlue").value;
 
-    let colors = [red, green, blue];
-    let colorsJSON = JSON.stringify(colors);
-    localStorage.setItem("sliders",colorsJSON);
+    // voeg swatch toe
+    addSwatchComponent(red, green, blue);
+
+    // bewaar kleurinfo van alle swatches in local storage
+    storeSwatches();
 };
 
+const setColorPickerFromSwatch = (event) => {
+    if (event.target.className=="swatch") {
+        let swatch = event.target;
+        document.getElementById("sldRed").value = rgb.red;
+        document.getElementById("sldGreen").value = rgb.green
+        document.getElementById("sldBlue").value = rgb.blue
+
+
+        // helaas triggeren de .value wijzigingen niet automatisch
+        // een change event ds moeten we handmatig update oproepen
+        update();
+    }
+};
+
+const deleteSwatch = (event) => {
+    let swatchComponents = document.getElementById("swatchComponents");
+    let button = event.target;
+    let swatch = button.parentNode;
+    swatchComponents.removeChild(swatch);
+
+    // bewaar kleurinfo van alle swatches in local storage
+    storeSwatches();
+};
 
 const update = () => {
     let red = document.getElementById("sldRed").value;
