@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="text/javascript" charset="utf-8"
+            src="scripts/code.js"></script>
+    <title>Takenlijstje</title>
+</head>
+<body>
+
+<h1>Takenlijstje</h1>
+
+<div id="todos">
+
+    <div id="divNew">
+
+        <input type="button" id="btnNew" value="+">
+
+        <div id="formulier" class="hidden">
+            <label for="txtTitel">Titel:</label>
+            <input type="text" id="txtTitel">
+
+            <label for="dtmEindDatum">Einddatum:</label>
+            <input type="date" id="dtmEindDatum">
+
+            <label for="txtNotities">Notities:</label>
+            <input type="txt" id="txtNotities">
+
+            <input type="button" id="btnOpslaan" value="Opslaan">
+            <input type="button" id="btnAnnuleren" value="Annuleren">
+        </div>
+    </div>
+
+</div>
+
+<input id="btnWissen" type="button" value="wis alle taken">
+<input id="btnTeLaat" type="button" value="Verberg / toon te late">
+<input id="btnSorteer" type="button" value="Sorteer op datum">
+
+</body>
+</html>

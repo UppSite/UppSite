@@ -1,0 +1,297 @@
+const setup = () => {
+    selecteerWoord();
+
+}
+
+const checkWin = () =>{
+    if (!woordLeeg.includes("_")){
+        alert("you won!");
+    }
+}
+
+const selecteerWoord = () =>{
+    let random = Math.random() * woorden.length;
+    random = Math.round(random);
+
+    HetWoord = woorden[random];
+    bouwSpel();
+    let letter = document.getElementById("letterGuess");
+    letter.addEventListener("keypress",checkLetter);
+
+}
+
+const reveal = (index,letter) =>{
+    woordLeeg = woordLeeg.slice(0, index) + letter + woordLeeg.slice(index + 1);
+    document.getElementById("word").innerHTML = woordLeeg;
+
+    document.getElementById("letterGuess").value = null;
+}
+
+const checkLetter = () =>{
+    let letter = document.getElementById("letterGuess").value;
+
+    for (let i = 0;i < HetWoord.length ; i++){
+        if (HetWoord.substr(i,1) === letter){
+            reveal(i*2,letter);
+        }
+    }
+
+}
+
+const bouwSpel= () =>{
+    let lengte = HetWoord.length;
+
+    let woordInvul = document.getElementById("word");
+
+    for (let i = 0; i <lengte;i++){
+        woordLeeg += "_ ";
+    }
+    console.log(HetWoord);
+
+    woordInvul.innerHTML = woordLeeg;
+}
+let HetWoord;
+let woordLeeg ="";
+const woorden = [
+    "huis",
+    "boom",
+    "hond",
+    "tafel",
+    "stoel",
+    "auto",
+    "fiets",
+    "weg",
+    "zon",
+    "maan",
+    "ster",
+    "vogel",
+    "kat",
+    "slang",
+    "vis",
+    "appel",
+    "peer",
+    "banaan",
+    "kiwi",
+    "aardbei",
+    "druif",
+    "melk",
+    "koffie",
+    "thee",
+    "water",
+    "brood",
+    "kaas",
+    "boter",
+    "ei",
+    "suiker",
+    "zout",
+    "peper",
+    "pasta",
+    "rijst",
+    "aardappel",
+    "vlees",
+    "vis",
+    "kip",
+    "groente",
+    "fruit",
+    "soep",
+    "salade",
+    "pizza",
+    "hamburger",
+    "ijs",
+    "cake",
+    "koekje",
+    "chocolade",
+    "suiker",
+    "zout",
+    "peper",
+    "bloem",
+    "melk",
+    "ei",
+    "boter",
+    "olie",
+    "zilver",
+    "goud",
+    "diamant",
+    "hout",
+    "steen",
+    "glas",
+    "ijzer",
+    "plastic",
+    "papier",
+    "potlood",
+    "pen",
+    "boek",
+    "krant",
+    "tijdschrift",
+    "telefoon",
+    "computer",
+    "televisie",
+    "radio",
+    "muziek",
+    "film",
+    "foto",
+    "kunst",
+    "sport",
+    "spel",
+    "reis",
+    "vakantie",
+    "school",
+    "universiteit",
+    "student",
+    "leraar",
+    "dokter",
+    "ziekenhuis",
+    "politie",
+    "brandweer",
+    "winkel",
+    "restaurant",
+    "hotel",
+    "huis",
+    "straat",
+    "stad",
+    "land",
+    "wereld",
+    "zon",
+    "maan",
+    "ster",
+    "lucht",
+    "water",
+    "vuur",
+    "aarde",
+    "natuur",
+    "milieu",
+    "kast",
+    "lamp",
+    "deur",
+    "raam",
+    "stoep",
+    "trap",
+    "muur",
+    "plafond",
+    "vloer",
+    "scherm",
+    "toetsenbord",
+    "muis",
+    "printer",
+    "laptop",
+    "scherm",
+    "luidspreker",
+    "hoofdtelefoon",
+    "microfoon",
+    "camera",
+    "batterij",
+    "oplader",
+    "kabel",
+    "netwerk",
+    "wifi",
+    "bluetooth",
+    "bestand",
+    "map",
+    "programma",
+    "applicatie",
+    "website",
+    "server",
+    "gegevens",
+    "code",
+    "database",
+    "browser",
+    "knop",
+    "formulier",
+    "link",
+    "afbeelding",
+    "video",
+    "audio",
+    "tekst",
+    "letter",
+    "cijfer",
+    "symbool",
+    "kleur",
+    "font",
+    "stijl",
+    "opmaak",
+    "titel",
+    "paragraaf",
+    "lijst",
+    "tabel",
+    "grafiek",
+    "diagram",
+    "presentatie",
+    "document",
+    "map",
+    "instellingen",
+    "menu",
+    "optie",
+    "taak",
+    "proces",
+    "fout",
+    "waarschuwing",
+    "bericht",
+    "notitie",
+    "agenda",
+    "wekker",
+    "klok",
+    "kalender",
+    "timer",
+    "rekenmachine",
+    "spel",
+    "puzzel",
+    "kunst",
+    "muziek",
+    "film",
+    "boek",
+    "tijdschrift",
+    "krant",
+    "schrijver",
+    "acteur",
+    "regisseur",
+    "kunstenaar",
+    "zanger",
+    "band",
+    "instrument",
+    "gitaar",
+    "piano",
+    "drum",
+    "viool",
+    "fluit",
+    "trompet",
+    "sport",
+    "voetbal",
+    "basketbal",
+    "tennis",
+    "golf",
+    "zwemmen",
+    "fietsen",
+    "hardlopen",
+    "wandelen",
+    "klimmen",
+    "skiën",
+    "snowboarden",
+    "yoga",
+    "fitness",
+    "meditatie",
+    "reis",
+    "vakantie",
+    "bestemming",
+    "hotel",
+    "reservering",
+    "bagage",
+    "paspoort",
+    "ticket",
+    "vlucht",
+    "trein",
+    "bus",
+    "auto",
+    "taxi",
+    "geld",
+    "wisselkoers",
+    "bank",
+    "pinpas",
+    "creditcard",
+    "betaling",
+    "winkel",
+    "kassa",
+    "prijs",
+    "aanbieding",
+    "korting"
+];
+window.addEventListener("load", setup);
